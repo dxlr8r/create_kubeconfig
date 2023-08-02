@@ -10,7 +10,7 @@ URL=https://hostname:6443 NAME=mykube SA=mysa NS=kube-system TTL=168 sh -c "$(cu
 
 As seen from the example above, you can/need to define multiple variables to get a valid kubeconfig. The value of these will of course vary depending on server, service account in question etc.
 
-Defaults and description of configuration variables:
+Description and defaults of configuration variables:
 
 - URL: the url the user of the kubeconfig will use to connect to the Kubernetes: https://localhost:6443
 - NAME: name of the cluster and context: default
