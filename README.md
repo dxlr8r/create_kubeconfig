@@ -5,7 +5,7 @@ create_kubeconfig is a small script to create a kubeconfig file for a specified 
 Must be invoked on a host which already have access to the server in question.
 
 ```sh
-URL=https://hostname:6443 NAME=mykube SA=mysa NS=kube-system TTL=168 sh -c "$(curl -fsSL https://github.com/dxlr8r/create_kubeconfig/blob/main/create_kubeconfig.sh)" > ~/.kube/mykubeconfig
+URL=https://hostname:6443 NAME=mykube SA=mysa NS=kube-system TTL=168 sh -c "$(curl -fsSL https://raw.githubusercontent.com/dxlr8r/create_kubeconfig/main/create_kubeconfig.sh)" > ~/.kube/mykubeconfig
 ```
 
 As seen from the example above, you can/need to define multiple variables to get a valid kubeconfig. The value of these will of course vary depending on server, service account in question etc.
